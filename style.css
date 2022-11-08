@@ -1,0 +1,1287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+.onSect{
+   width: 100%;
+   background-image: url('./image/bg1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+/* шапка сайта */
+
+nav{
+   height: 90px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+li, a{
+   text-decoration: none;
+   list-style: none;
+}
+
+
+.navbar-list, .navbar-list-contacts{
+   display: flex;
+   justify-content: space-around;
+}
+
+.navbar-nav{
+   display: flex;
+   justify-content: space-around;
+   width: 565px;
+}
+
+.nav-item:hover{
+   text-decoration: underline;
+   text-underline-offset: 5px;
+}
+
+.nav-link{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: #195557;
+   white-space: nowrap;
+}
+
+.contacts, .navbar-contacts{
+   display: flex;
+   align-items: center;
+}
+
+.imgPhone{
+   padding: 21px;
+   margin-right: 30px;
+   background: linear-gradient(1.36deg, #B0D3CE 12.29%, #FFEDCE 83.89%);
+   box-shadow: -4px -4px 20px #FFFFFF, 4px 4px 20px #CFD7D3;
+   border-radius: 40px;
+}
+
+.imgBasket{
+   width: 36px;
+   height: 32px;
+   margin-left: 80px;
+}
+
+/* адаптив */
+.burger-menu{
+ display: none;
+}
+
+
+/* submenu */
+summary{
+   cursor: pointer;
+}
+
+.submenu{
+   width: 169px;
+   height: 173px;
+   position: absolute;
+   background: #FFFEFE;
+   box-shadow: 4px 4px 20px #C2CCCA;
+   border-radius: 8px;
+   padding: 19px 24px;
+   margin-top: 14px;
+}
+
+.submenu a{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   text-transform: uppercase;
+   color: #195557;
+}
+
+.submenu a:hover{
+   text-decoration: underline;
+   text-underline-offset: 5px;
+}
+
+/* 1 часть*/
+.onSect-content{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 170px 0 200px;
+}
+
+.onSect-content img{
+  width: 443px;
+  height: 94px;
+  margin-bottom: 20px;
+}
+
+.onSect-content h1{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 50px;
+   line-height: 61px;
+   text-transform: uppercase;
+   color: #70908B;
+}
+
+.onSect-content p{
+   margin: 18px 0 34px;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;   
+   color: #70908B;
+}
+
+.button{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;  
+   width: 328px;
+   height: 69px;
+   color: #FFFFFF;
+   background: #70908B;
+   box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+   border-radius: 40px;
+   border: 0;
+   cursor: pointer;
+}
+
+/* 1 часть информация по ежикам */
+.onSect-info{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   margin: auto;
+}
+
+.cards-breeding, .cards-health, .cards-care{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 182px;
+   height: 323px;
+}
+
+.cards-breeding img, .cards-health img, .cards-care img{
+   width: 152px;
+   height: 152px;
+   background: #FFEDCD;
+   box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+   padding: 60px 45px;
+   border-radius: 50%;
+}
+
+.cards-health{
+   margin: 88px 185px 0;
+}
+
+.cards-breeding, .cards-care{
+   margin-top: 150px;
+}
+
+.infoImg-left{
+   height: 565px;
+   margin-top: 20px;
+   float: left;
+}
+
+.infoImg-right{
+   height: 331px;
+   margin-top: 256px;
+   float: right;
+}
+
+/* Вторая секция */
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.slider{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sliderCard{
+   display: flex;
+   width: 570px;
+   height: 396px;
+   background: #FFEDCD;
+   box-shadow: 4px 4px 40px #F1F1F1;
+   border-radius: 20px;
+   margin-left: 35px;
+}
+
+
+.sale{
+   width: 68px;
+   height: 36px;
+   background: #70908B;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 23px;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #FFFFFF;
+   padding: 7px 6px;
+   margin: -10px 0 0 62px;
+}
+
+.leftSide h2{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   color: #195557;
+   margin: 24px 0 17px 59px;
+}
+
+.leftSide p{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 141.9%;  
+   color: #000000;
+   margin: 0 0 15px 62px;
+}
+
+/* Цены */
+.outPrice{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   text-decoration-line: line-through;
+   color: #C2CCCA;
+   margin-left: 59px;
+}
+
+.price{
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 48px;
+   color: #195557;
+   margin: 0 0 58px 59px;
+}
+/* правая часть */
+.righteSide{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: space-around;
+}
+
+.righteSide-inform{
+   width: 32px;
+   height: 32px;
+   margin-right: 30px;
+   border: 2px solid #195557;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   color: #195557;
+   cursor: default;
+   position: relative;
+}
+
+.dropdown-info{
+   display: none;
+   position: absolute;
+   width: 220px; 
+   height: 88px;
+   background-image: url('./image/drop-backg.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin: 131px -2px 0 0;
+   padding: 37px 0 32px 0px;
+   z-index: 1;
+}
+
+.dropdown-info  img{
+   width: 19px;
+   height: 18px;
+   margin-left: 32px;
+}
+
+.dropdown-info p{
+   display: inline;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   text-transform: lowercase;
+   color: #FFFFFF;
+   margin-left: 7px;
+}
+
+.righteSide-inform:hover .dropdown-info{
+      display: block;
+}
+
+.adaptive-info{
+   display: none;
+}
+
+.righteSide > img{
+   width: 360px;
+   height: 260px;
+   background-position: center;
+   background-repeat: no-repeat;
+   margin-right: -23px;
+}
+
+.plus{
+   width: 125px;
+   height: 55px;
+   color:  #195557;
+   font-size: 50px;
+   text-align: center;
+   background-color: rgb(255,255,255, 1);
+   transform: rotate(-45deg);
+   margin: -26px -49px;
+}
+
+.plus p{
+   transform: rotate(45deg);
+   cursor: pointer;
+}
+
+
+
+.sliderBackgraund{
+   background: #E2F0DF;
+   margin: 0 35px 0 43px;
+}
+
+
+/* Форма отправки */
+
+.form{
+   width: 1197px;
+   background: #EAEEEF;
+   border-radius: 30px;
+   margin-top: 91px;
+   text-align: center;
+}
+
+.form h2{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 54px;  
+   color: #195557;
+   margin: 39px 0 30px;
+}
+
+.button-checkbox{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.form-button button{
+   width: 170px;
+   height: 49px;
+   border: 2px solid #70908B;
+   border-radius: 61px;
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   color: #70908B;
+   cursor: pointer;
+}
+
+.form-button button:hover{
+   background: #70908B;
+   color: #FFFFFF;
+}
+
+.form-button button:nth-child(3) {
+   width: 199px;
+ }
+ 
+
+.checkbox{
+   width: 436px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.checkbox li{
+   display: flex;
+   width: 200px;
+}
+
+.checkbox label{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   color: #70908B;
+   margin: 5px 8px;
+}
+
+#hedgehog1:checked{
+   background-color: #70908B;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  color: #195557;
+}
+
+.form-input{
+   margin: 43px 0 20px;
+}
+
+.form-input input{
+   width: 352px;
+   height: 62px;
+   background: #F8F8F8;
+   border-radius: 8px;
+   border: 0;
+   padding: 10px;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;  
+   color: #195557;
+}
+
+.form-input input:nth-child(2){
+   margin: 0 19px 0;
+}
+
+textarea{
+   width: 1096px;
+   height: 108px;
+   resize: none;
+   background: #F8F8F8;
+   border-radius: 8px;
+   border: 0;
+   padding: 21px 0 0 28px;
+}
+
+.form-input-button button{
+   margin: 45px 0 -35px;
+}
+
+.stock{
+   margin: 67px 0 30px;
+}
+
+.stock h3{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   color: #195557;
+   display: inline;
+   margin: 0 0 30px 10px;
+}
+
+.stock{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   text-align: center;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #195557;
+}
+
+/* footer */
+
+footer{
+   background: #70908B;
+   color: white;
+   padding: 20px 50px;
+}
+
+.footer-logo{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.footer-logo img{
+   width: 128px;
+   height: 49px;
+}
+
+/* footer-list */
+
+.footer-list{
+   display: flex;
+   justify-content: space-around;
+   margin-left: 280px;
+}
+
+.footer-list a{
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-left: 50px;
+}
+
+/* footer-icons */
+.footer-icon{
+   margin: 0 50px;
+}
+
+.footer-icon img{
+   width: 30px;
+   height: 30px;
+}
+
+.footer-icon img:nth-child(2){
+   margin: 0 23px;
+}
+
+/* footer-phon */
+
+.footer-phon{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 26px;
+   text-transform: uppercase;
+   font-feature-settings: 'tnum' on, 'lnum' on;
+   color: #FFFFFF;
+}
+
+.footer-text{
+   display: flex;
+   justify-content: flex-start;
+}
+
+.footer-text p{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 9px;
+   line-height: 131.4%;
+   color: #FFFFFF;
+}
+
+
+/* адаптив iphon X */
+@media (max-width: 376px){
+   .onSect{
+      display: flex;
+      width: 100%;
+      background-color: #EAEEEF;
+      margin-bottom: 50px;
+   }
+
+   nav{
+      display: flex;
+      /* justify-content: space-around;
+      align-items: center; */
+   }
+   
+   li, a{
+      text-decoration: none;
+      list-style: none;
+   }
+   
+   .navbar-list{
+      display: block;
+      order: -1;      
+   }
+
+   .navbar-brand img{
+      width: 56px;
+      height: 26px;
+   }
+   
+   .navbar-nav{
+      display: none;
+   }
+   
+   .nav-item:hover{
+      text-decoration: underline;
+   }
+   
+   .nav-link{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #195557;
+   }
+   
+   .contacts, .navbar-contacts{
+      display: flex;
+      align-items: center;
+   }
+   
+   .imgPhone{
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(92.42deg, #B0D3CE -1.96%, #FFEDCE 92.83%);
+      box-shadow: -4px -4px 20px #FFFFFF, 4px 4px 20px #CFD7D3;
+      border-radius: 40px;
+      padding: 10px;
+      margin: 0;
+   }
+
+   .contacts a{
+      display: none;
+   }
+   
+   .imgBasket{
+      width: 32px;
+      height: 27px;
+      margin-left: 13px;
+   }
+/* адаптив */
+   .menu-btn{
+      width: 25px;
+      height: 14px;
+      position: relative;
+      top: -5px;
+      left: -15px;
+   }
+
+   .menu-btn div{
+      width: 30px;
+      height: 2px;
+      background: #195557;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+   }
+
+   .menu-btn div:nth-of-type(2){
+      top: calc(50% - 5px);
+   }
+   
+   .menu-btn div:nth-of-type(3){
+      top: calc(50% + 5px);
+   }
+
+   .burger-menu.active{
+      display: block;
+      width: 90%;
+      height: 450px;
+      background: #FFFFFF;
+      box-shadow: 4px 4px 20px #E3E3E3;
+      border-radius: 0px 10px 10px 0px;
+      position: fixed;
+      top: 0;
+      left: 0;
+   }
+   .menu-btn-close{
+      width: 25px;
+      height: 14px;
+      position: relative;
+      top: 32px;
+      left: 20px;
+   }
+
+   .menu-btn-close div{
+      width: 30px;
+      height: 2px;
+      background: #195557;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+   }
+
+   .menu-btn-close div:nth-of-type(1){
+      display: none;
+   }
+
+   .menu-btn-close div:nth-of-type(2){
+      top: 50%;
+      transform: rotate(45deg);
+   }
+
+   .menu-btn-close div:nth-of-type(3){
+      top: 50%;
+      transform: rotate(-45deg);
+   }
+
+   .menu{
+      position: fixed;
+      top: 100px;
+      left: 40px;
+   }
+
+   .menu img{
+      position: fixed;
+      top: 25px;
+      left: 45%;
+
+   }
+
+   .menu a{
+      display: block;
+      margin-bottom: 20px;
+   }
+
+   .Phon{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #195557;
+      margin-top: 120px;
+   }
+
+/* средний 1 часть */
+   .onSect-content{
+      width: 100%;
+      display: block;
+      margin: 32px 0 45px;
+      padding-left: 19px;
+   }
+   
+   .onSect-content img{
+     width: 202px;
+     height: 44px;
+     margin-bottom: 12px;
+   }
+   
+   .onSect-content h1{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #70908B;
+   }
+   
+   .onSect-content p{
+      width: 280px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 146.4%;
+      color: #70908B;
+   }
+   
+   .button{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;  
+      width: 281px;
+      height: 59px;
+      color: #FFFFFF;
+      background: #70908B;
+      box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+      border-radius: 40px;
+      border: 0;
+      cursor: pointer;
+      margin-left: 30px;
+   }
+
+   /* средний 2 часть */
+
+   .onSect-info{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   
+   .cards-breeding, .cards-health, .cards-care{
+      text-align: left;
+      width: 115px;
+      height: 150px;
+      margin: 15px;
+   }
+   
+   .cards-breeding img, .cards-health img, .cards-care img{
+      width: 92px;
+      height: 92px;
+      background: #FFEDCD;
+      box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+      padding: 37px 23px;
+      border-radius: 50%;
+   }
+
+   .onSect-info h2{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #195557;
+      margin: 17px 0 10px;
+   }
+   
+   .cards-breeding, .cards-care{
+      margin-top: 0px;
+   }
+   
+   .infoImg-left{
+     display: none;
+   }
+
+   .onSect-info p{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 159.9%;
+      color: #195557;
+   }
+
+   .cards-breeding{
+      order: -1;
+   }
+
+   .cards-health{
+      order: 2;
+   }
+
+   .cards-care{
+      order: 3;
+   }
+   
+   .infoImg-right{
+      width: 180px;
+      height: 217px;
+      margin: 0 -40px 0 0;
+      order: 1;
+   }
+
+   /* слайдер */
+   .wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .slider{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .slider a{
+      display: none;
+   }
+   
+   .sliderCard{
+      display: flex;
+      width: 290px;
+      height: 336px;
+      background: #FFEDCD;
+      box-shadow: 4px 4px 40px #F1F1F1;
+      border-radius: 20px;
+   }
+   
+   
+   .sale{
+      width: 48px;
+      height: 21px;
+      background: #70908B;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+      padding: 5px 5px;
+      margin: -10px 0 0 62px;
+   }
+   
+   .leftSide h2{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      color: #195557;
+      margin: 16px 0 15px 29px;
+   }
+   
+   .leftSide p{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px; 
+      color: #000000;
+      margin: 0 0 5px 30px;
+   }
+   
+   /* Цены */
+   .outPrice{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-decoration-line: line-through;
+      color: #C2CCCA;
+      margin-left: 29px;
+   }
+   
+   .price{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: #195557;
+      margin: 0 0 29px 30px;
+   }
+   
+   .righteSide{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+   }
+   
+   .righteSide-inform{
+      display: none;
+   }
+   
+   .adaptive-info{
+      display: flex;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      text-transform: lowercase;
+      color: #195557;
+      text-align: left;
+      margin: -40px 24px;
+   }
+
+   .adaptive-info img{
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+   }
+   
+   .righteSide > img{
+      width: 170px;
+      height: 130px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: -23px;
+   }
+   
+   .plus{
+      width: 85px;
+      height: 38px;
+      color:  #195557;
+      font-size: 30px;
+      text-align: center;
+      background-color: rgb(255,255,255, 1);
+      transform: rotate(-45deg);
+      margin: -65px -15px;
+   }
+   
+   .plus p{
+      transform: rotate(45deg);
+      cursor: pointer;
+   }
+   
+   
+   
+   .sliderBackgraund{
+     display: none;
+   }
+
+   /* Форма отправки */
+
+   .form{
+      width: 100%;
+      background: #EAEEEF;
+      border-radius: 0px;
+      margin-top: 41px;
+      text-align: left;
+      padding: 0 50px;
+   }
+
+   .form h2{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;  
+      color: #195557;
+      margin: 39px 0 25px;
+   }
+
+   .button-checkbox{
+      display: block;
+      align-items: center;
+      margin: 25px 0 30px;
+   }
+
+   .form-button button{
+      width: 170px;
+      height: 49px;
+      border: 2px solid #70908B;
+      border-radius: 61px;
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #70908B;
+      cursor: pointer;
+      margin: 8px 0;
+   }
+
+   .form-button button:hover{
+      background: #70908B;
+      color: #FFFFFF;
+   }
+
+   .form-button button:nth-child(3) {
+      width: 199px;
+    }
+
+
+   .checkbox{
+      width: 250px;
+      display: block;
+   }
+
+   .checkbox li{
+      display: flex;
+      width: 200px;
+   }
+
+   .checkbox label{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #70908B;
+      margin: 5px 8px;
+   }
+
+   #hedgehog1:checked{
+      background-color: #70908B;
+     border: 2px solid #999;
+     transition: 0.2s all linear;
+     color: #195557;
+   }
+
+   .form-input{
+      margin: 0;
+   }
+
+   .form-input input{
+      width: 280px;
+      height: 62px;
+      background: #F8F8F8;
+      border-radius: 8px;
+      border: 0;
+      padding: 10px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;  
+      color: #195557;
+      margin: 10px 0;
+      padding: 23px 21px;
+   }
+
+   .form-input input:nth-child(2){
+      margin: 0;
+   }
+
+   textarea{
+      width: 280px;
+      height: 62px;
+      resize: none;
+      background: #F8F8F8;
+      border-radius: 8px;
+      border: 0;
+      padding: 21px 0 0 21px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #195557;
+   }
+
+   .form-input-button button{
+      margin: 25px 0 40px;
+   }
+
+   .stock{
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 30px 50px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #195557;
+   }
+
+   .stock img{
+      width: 34px;
+      height: 19px;
+   }
+
+   .stock h3{
+      width: 200px;
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #195557;
+      margin: 10px 0 27px;
+      text-align: left;
+   }
+
+   /* footer */
+
+   footer{
+      background: #70908B;
+      color: white;
+      padding: 35px 20px;
+   }
+
+   .footer-logo{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+   }
+
+   .footer-logo img{
+      width: 120px;
+      height: 56px;
+      margin: 0 100px 0 0;
+      order: -1;
+   }
+
+   /* footer-list */
+
+   .footer-list{
+      display: block;
+      margin: 20px 200px 30px 0;
+      order: 2;
+      margin-top: -30px;
+   }
+
+   .footer-list li{
+      margin-bottom: 20px;
+   }
+
+   .footer-list a{
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-left: 0;
+   }
+
+   /* footer-icons */
+
+   .footer-icon{
+      margin: 0;
+      order: 1;
+   }
+
+   .footer-icon img{
+      width: 30px;
+      height: 30px;
+      display: block;
+      margin: 10px 0;
+   }
+
+   .footer-icon img:nth-child(2){
+      margin: 0;
+   }
+
+   /* footer-phon */
+
+   .footer-phon{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #FFFFFF;
+      order: 3;
+      margin-left: -110px;
+   }
+
+   .footer-text{
+      width: 230px;
+      text-align: left;
+      margin-left: 20px;
+   }
+}
